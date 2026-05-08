@@ -27,8 +27,9 @@
 - Apendicectomía
 - Cirugía de patologías gastrointestinales
 
-**URL del sitio web:** [COMPLETAR]
-**URL para agendar consulta:** [COMPLETAR]
+**URL del sitio web:** Pendiente — sitio en construcción desde cero
+**URL para agendar consulta:** Pendiente — WhatsApp Business por configurar
+**Estado del proyecto digital:** Fase 0 — todo se construye desde cero (sitio, blog, redes, WhatsApp)
 
 ---
 
@@ -127,6 +128,11 @@
 **Palabras a USAR:** cálculos, vesícula, hernia, laparoscopia, recuperación rápida, sin cicatriz grande, misma semana, atención directa, La Paz BCS, valoración, diagnóstico claro
 
 **Palabras a EVITAR:** jerga médica excesiva (colecistitis aguda, coledocolitiasis) sin explicar, lenguaje que genere más miedo del necesario, promesas de resultado garantizado
+
+**Testimonios:** ✅ Existen — pendiente de transcribir (solicitarlos al dueño)
+
+**Fotos del médico/consultorio:** ❌ Pendiente de sesión fotográfica — prioridad alta para E-E-A-T
+
 
 ---
 
