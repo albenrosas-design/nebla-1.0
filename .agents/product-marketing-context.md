@@ -9,6 +9,7 @@
 ## Producto
 
 **Nombre de marca:** Nebla
+**Nombre del médico:** Dr. Alben Rosas
 
 **One-liner:** Cirujano general en La Paz BCS especializado en vesícula, hernias y patologías gastrointestinales — consultas y cirugía laparoscópica.
 
@@ -167,11 +168,17 @@
 **Canales de adquisición:**
 - [ ] SEO orgánico (prioridad alta — búsquedas locales de síntomas)
 - [ ] Google Ads (búsquedas locales de alta intención)
-- [ ] Instagram / Facebook (educación + prueba social)
+- [x] Instagram orgánico — @dralbenrosas (172 seguidores, fotos en quirófano + antes/después)
+- [x] Facebook Page — existe, sin contenido publicado aún, sin seguidores
+- [ ] Meta Ads (Instagram + Facebook pagado) — cuentas listas, falta Business Manager
 - [ ] WhatsApp Business (cierre de consultas)
 - [ ] Referencias de médicos generales de La Paz
 
-**Herramientas:** [COMPLETAR cuando estén configuradas]
+**Herramientas:**
+- Meta Business Manager: ❌ por configurar
+- Meta Pixel: ❌ por instalar en el sitio
+- Google Ads: ❌ cuenta por crear
+- GA4 + GTM: ❌ por instalar
 
 ---
 

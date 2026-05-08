@@ -32,12 +32,40 @@ Solo Dr. Peinado tiene Facebook activo. Ninguno parece hacer paid social de form
 
 ## 2. ESTRUCTURA DE CAMPAÑAS — BLUEPRINT COMPLETO
 
-### Fase de lanzamiento recomendada
+### Cuentas Meta confirmadas
+
+| Plataforma | Handle / URL | Seguidores | Estado |
+|-----------|-------------|-----------|--------|
+| Instagram | @dralbenrosas | 172 | Activa, contenido orgánico |
+| Facebook | Página (no personal) | 0 publicaciones | Existe, sin actividad |
+| Meta Business Manager | — | — | ❌ Por configurar |
+| Meta Pixel | — | — | ❌ Por instalar |
+
+### ⚠️ RESTRICCIÓN CRÍTICA — Política de anuncios médicos de Meta
+
+**Las fotos de antes/después de cirugías y las imágenes en quirófano NO se pueden usar en anuncios pagados de Meta.**
+
+Meta prohíbe explícitamente en ads:
+- Imágenes antes/después de procedimientos médicos
+- Fotos de cirugías, sangre o procedimientos invasivos
+- Copy que implique resultados garantizados
+- Targeting por condiciones de salud específicas
+
+**Esto aplica solo a ads pagados.** El contenido orgánico en Instagram puede seguir exactamente igual — esas fotos generan credibilidad y engagement orgánico perfectamente.
+
+Los anuncios pagados deben usar:
+- Foto profesional del Dr. Alben Rosas (sin bata quirúrgica, sin quirófano)
+- Gráficos educativos con texto
+- Testimonios en texto (sin imágenes médicas)
+- Videos del médico hablando a cámara (el formato de mayor conversión)
+
+### Fase de lanzamiento revisada
 
 ```
-Mes 1: Google Search (alta intención) + WhatsApp como CTA
-Mes 2: Meta Ads (awareness + consideración) cuando haya foto del doctor
-Mes 3: Google Ads expandido + Remarketing cuando haya datos de conversión
+Mes 1: Google Search (alta intención) — lanza en cuanto el sitio esté live
+Mes 1: Meta Ads — lanza en paralelo si se obtiene foto del Dr. Rosas fuera de quirófano
+Mes 2: Meta Ads expandido + Video ads cuando haya video del médico hablando
+Mes 3: Remarketing (píxel con datos suficientes) + Google escalado
 ```
 
 ---
@@ -213,7 +241,9 @@ Headlines:
 
 ### CANAL 2: META ADS (Facebook + Instagram)
 
-**Lanzar en Mes 2** — Requiere fotos del doctor. Sin foto real el CTR cae drásticamente en anuncios médicos.
+**Lanzar en Mes 1 en paralelo con Google** — Las cuentas ya existen (@dralbenrosas en Instagram, Página en Facebook). Requiere: foto del Dr. Rosas fuera de quirófano + Meta Business Manager configurado.
+
+**⚠️ Recordatorio:** Solo usar imágenes permitidas por Meta (ver restricción arriba). El contenido de cirugías queda para el feed orgánico de Instagram únicamente.
 
 #### Configuración de cuenta
 
@@ -313,11 +343,15 @@ CTA: Enviar mensaje
 
 | Canal | Presupuesto diario | Presupuesto mensual |
 |-------|-------------------|-------------------|
-| Google Search | $250 MXN/día | ~$7,500 MXN |
-| Meta Ads | $0 (Mes 2) | $0 |
-| **Total Mes 1** | **$250 MXN/día** | **~$7,500 MXN (~$375 USD)** |
+| Google Search | $200 MXN/día | ~$6,000 MXN |
+| Meta Ads (Instagram + Facebook) | $100 MXN/día | ~$3,000 MXN |
+| **Total Mes 1** | **$300 MXN/día** | **~$9,000 MXN (~$450 USD)** |
 
-**Razonamiento:** Google Search captura intención activa. Es el canal de mayor retorno en servicios médicos locales de alta intención. Meta espera hasta tener foto del médico.
+**Razonamiento:** Google captura a quien ya está buscando. Meta llega a quien aún no buscó pero tiene síntomas. Los dos canales se complementan y amplifican el mismo mensaje. El 67/33 favorece Google porque tiene intención más directa.
+
+**CPC estimado Google:** $8–25 MXN → ~240–750 clics/mes
+**CPM estimado Meta:** $50–80 MXN → ~37,000–60,000 impresiones/mes
+**Consultas estimadas mes 1:** 15–50 combinando ambos canales
 
 **CPC estimado en La Paz BCS** (sin competencia pagada): $8–25 MXN por clic
 **Clics estimados mes 1:** 300-900 clics
@@ -341,13 +375,15 @@ CTA: Enviar mensaje
 - [ ] Perfil de Google Business Profile creado y verificado con dirección real
 - [ ] Presupuesto mensual aprobado por el dueño
 
-### Recomendado antes de lanzar Meta Ads (Mes 2)
+### Para lanzar Meta Ads (Mes 1, en paralelo con Google)
 
-- [ ] Al menos 1 foto profesional del médico (no selfie)
-- [ ] Al menos 1 foto del consultorio
-- [ ] Testimonios de pacientes transcritos (ya existen según el dueño)
-- [ ] Cuenta de Meta Business Manager creada
-- [ ] Página de Facebook del consultorio creada
+- [ ] Meta Business Manager creado y configurado (business.facebook.com)
+- [ ] Instagram @dralbenrosas y Facebook Page conectadas al Business Manager
+- [ ] Método de pago agregado en Meta Business Manager
+- [ ] Meta Pixel instalado en el sitio (coordinado con agente Analytics)
+- [ ] Al menos 1 foto del Dr. Rosas **fuera de quirófano** (consultorio, exterior, fondo neutro)
+- [ ] Testimonios de pacientes transcritos para usar como copy
+- [ ] ⚠️ NO usar fotos de cirugías ni antes/después en los anuncios pagados
 
 ---
 
