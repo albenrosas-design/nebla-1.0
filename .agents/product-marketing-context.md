@@ -9,7 +9,11 @@
 ## Producto
 
 **Nombre de marca:** Nebla
-**Nombre del médico:** Dr. Alben Rosas
+**Nombre completo del médico:** Dr. Alben Eduardo Rosas Ojeda
+**Cédula profesional:** 11017193
+**Certificación:** CMCG 2026
+**Teléfono / WhatsApp:** (624) 100-0426
+**Email:** Alben.rosas@gmail.com
 
 **One-liner:** Cirujano general en La Paz BCS especializado en vesícula, hernias y patologías gastrointestinales — consultas y cirugía laparoscópica.
 
@@ -29,7 +33,7 @@
 - Cirugía de patologías gastrointestinales
 
 **URL del sitio web:** Pendiente — sitio en construcción desde cero
-**URL para agendar consulta:** Pendiente — WhatsApp Business por configurar
+**URL para agendar consulta:** WhatsApp (624) 100-0426 — pendiente configurar Business API
 **Estado del proyecto digital:** Fase 0 — todo se construye desde cero (sitio, blog, redes, WhatsApp)
 
 ---
@@ -133,6 +137,7 @@
 **Testimonios:** ✅ Existen — pendiente de transcribir (solicitarlos al dueño)
 
 **Fotos del médico/consultorio:** ❌ Pendiente de sesión fotográfica — prioridad alta para E-E-A-T
+**Identidad visual:** ✅ brand-profile.json creado — paleta v2, tipografía Cormorant Garamond + Jost, logo monograma A
 
 
 ---

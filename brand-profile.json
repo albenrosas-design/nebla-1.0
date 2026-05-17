@@ -1,0 +1,157 @@
+{
+  "brand": {
+    "name": "Nebla",
+    "doctor": "Dr. Alben Eduardo Rosas Ojeda",
+    "specialty": "Cirujano General",
+    "certifications": ["CMCG 2026"],
+    "cedula": "11017193",
+    "location": "La Paz, B.C.S., México",
+    "tagline": "Cirujano general en La Paz BCS — vesícula, hernias y patologías gastrointestinales",
+    "tone": "Cálido, claro y confiable. Conversacional y educativo. Cercano, experto, directo, tranquilizador, local."
+  },
+
+  "contact": {
+    "phone": "(624) 100-0426",
+    "whatsapp": "(624) 100-0426",
+    "email": "Alben.rosas@gmail.com",
+    "instagram": "@dralbenrosas",
+    "facebook": "facebook.com/share/1CyaYtTUFa/",
+    "city": "La Paz, BCS"
+  },
+
+  "colors": {
+    "primary": {
+      "name": "Terracota",
+      "hex": "#8B3A2A",
+      "role": "Color principal — CTAs, encabezados, logo"
+    },
+    "accent_gold": {
+      "name": "Oro Ámbar",
+      "hex": "#C4922A",
+      "role": "Acento premium — iconos, separadores, detalles"
+    },
+    "accent_blue": {
+      "name": "Azul Petróleo",
+      "hex": "#2A6B7C",
+      "role": "Mar de Cortés — etiquetas, badges, links digitales"
+    },
+    "accent_teal": {
+      "name": "Turquesa BCS",
+      "hex": "#3D8FA3",
+      "role": "Acento digital — hover states, highlights en redes sociales"
+    },
+    "text_dark": {
+      "name": "Café Oscuro",
+      "hex": "#3D2B1F",
+      "role": "Textos y fondos oscuros"
+    },
+    "background_warm": {
+      "name": "Crema Otoñal",
+      "hex": "#F5EDE3",
+      "role": "Fondo principal del sitio y tarjetas"
+    },
+    "background_white": {
+      "name": "Blanco Cálido",
+      "hex": "#FAFAF8",
+      "role": "Fondo limpio para contenido largo y formularios"
+    }
+  },
+
+  "color_combinations": {
+    "print_stationery": {
+      "name": "Otoñal clásico",
+      "use": "Papelería, impreso, tarjetas de presentación",
+      "colors": ["#8B3A2A", "#C4922A", "#F5EDE3"]
+    },
+    "digital_social": {
+      "name": "Mar + oro",
+      "use": "Digital, redes sociales, anuncios",
+      "colors": ["#2A6B7C", "#C4922A", "#FAFAF8"]
+    },
+    "full_identity": {
+      "name": "Paleta completa",
+      "use": "Identidad total — sitio web, marca consolidada",
+      "colors": ["#3D2B1F", "#3D8FA3", "#8B3A2A", "#C4922A"]
+    }
+  },
+
+  "typography": {
+    "display": {
+      "family": "Cormorant Garamond",
+      "weight": "Regular / Italic",
+      "use": "Títulos, nombre del doctor, H1, H2",
+      "character": "Elegancia clínica"
+    },
+    "body": {
+      "family": "Jost",
+      "weight": "Light / Regular",
+      "use": "Cuerpo de texto, subtítulos, etiquetas, navegación",
+      "character": "Limpio, moderno, con carácter propio sin ser agresivo"
+    }
+  },
+
+  "logo": {
+    "type": "Monograma",
+    "mark": "Letra A con diseño floral (rosa) dentro de un círculo",
+    "circle_color": "#C4922A",
+    "letter_color": "#8B3A2A",
+    "floral_color": "#C4922A",
+    "background": "#F5EDE3"
+  },
+
+  "visual_style": {
+    "mood": "Premium, cálido, local, confiable",
+    "imagery": "Fotos reales del quirófano y del médico — autenticidad sobre stock photos",
+    "avoid": ["Stock photos genéricas", "Imágenes de dolor o sangre", "Paleta fría/clínica/azul corporativo", "Texto excesivo en imágenes"],
+    "prefer": ["Fotos reales del Dr. Rosas en quirófano", "Fondos crema/cálidos", "Tipografía elegante con espacio blanco generoso", "Iconografía de línea fina en Oro Ámbar"]
+  },
+
+  "ad_creative_guidelines": {
+    "meta_ads": {
+      "allowed": ["Foto del Dr. Rosas fuera del quirófano — bata blanca o scrubs", "Texto sobre síntomas y solución", "Testimonios en formato texto/quote card", "Infografías educativas"],
+      "prohibited": ["Fotos de cirugías activas", "Paciente visible en mesa", "Imágenes de órganos o campo quirúrgico", "Antes/después de procedimientos"],
+      "cta_primary": "Agendar consulta",
+      "cta_whatsapp": "Escríbeme al WhatsApp"
+    },
+    "google_ads": {
+      "keywords_core": ["cirujano La Paz BCS", "operación vesícula La Paz", "cirugía hernia La Paz", "cirugía laparoscópica La Paz BCS"],
+      "tone": "Directo, sin miedo, enfocado en solución rápida"
+    }
+  },
+
+  "services": [
+    {
+      "name": "Cirugía laparoscópica de vesícula",
+      "keyword": "colecistectomía laparoscópica",
+      "pain_point": "Dolor después de comer grasoso, cálculos biliares diagnosticados",
+      "benefit": "Recuperación en días, mínima cicatriz, misma semana disponible"
+    },
+    {
+      "name": "Cirugía de hernia",
+      "variants": ["inguinal", "umbilical", "hiatal"],
+      "pain_point": "Bulto que sale al esforzarse, dolor en la ingle o abdomen",
+      "benefit": "Técnica laparoscópica, regreso rápido al trabajo"
+    },
+    {
+      "name": "Apendicectomía",
+      "pain_point": "Dolor en fosa ilíaca derecha, urgencia",
+      "benefit": "Disponible para urgencias, técnica laparoscópica"
+    },
+    {
+      "name": "Consulta de valoración",
+      "pain_point": "No saber si necesita cirugía",
+      "benefit": "Diagnóstico claro en una sola consulta, atención directa con el cirujano"
+    }
+  ],
+
+  "target_audience": {
+    "primary": "Adultos 30-60 años, La Paz BCS y zona de influencia (Los Cabos, Constitución, Loreto)",
+    "gender_split": "Mujeres (vesícula), Hombres (hernias)",
+    "geography": "La Paz BCS — radio 200km",
+    "psychographic": "Prefieren atención privada, quieren certeza de fecha y trato directo, evitan listas de espera del IMSS"
+  },
+
+  "version": "1.0",
+  "last_updated": "2026-05-17",
+  "source": "Paleta marca alben v2 + tarjeta de presentación + product-marketing-context.md"
+}
