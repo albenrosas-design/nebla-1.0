@@ -26,8 +26,7 @@
       {"accountId": "0", "containerId": "0", "type": "CLICK_URL",              "name": "Click URL"},
       {"accountId": "0", "containerId": "0", "type": "CLICK_TEXT",             "name": "Click Text"},
       {"accountId": "0", "containerId": "0", "type": "SCROLL_DEPTH_THRESHOLD", "name": "Scroll Depth Threshold"},
-      {"accountId": "0", "containerId": "0", "type": "SCROLL_DEPTH_UNITS",     "name": "Scroll Depth Units"},
-      {"accountId": "0", "containerId": "0", "type": "SCROLL_DIRECTION",       "name": "Scroll Direction"}
+      {"accountId": "0", "containerId": "0", "type": "SCROLL_DEPTH_UNITS",     "name": "Scroll Depth Units"}
     ],
     "tag": [
       {
