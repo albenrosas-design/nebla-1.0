@@ -139,10 +139,11 @@ En GTM → **Activadores → Nuevo activador:**
 ```
 Nombre: Clic WhatsApp
 Tipo de activador: Clic — Solo enlaces
-Activar cuando: URL del clic contiene "wa.me"  O  URL del clic contiene "whatsapp"
+Activar cuando: URL del clic contiene "wa.me"  O  URL del clic contiene "526634370584"
 ```
 
-> Si el botón de WhatsApp usa `tel:` en lugar de `wa.me`, cambiar la condición a que el URL del clic contenga el número: `6241000426`
+> El número de WhatsApp del sitio es +52 663 437 0584 → wa.me/526634370584
+> El teléfono del consultorio (+52 612 146 7076) es diferente — crear activador separado si quieres trackearlo también.
 
 ### 7.2 — Tag: Meta Pixel Lead (WhatsApp click)
 
@@ -274,12 +275,16 @@ https://dralbenrosas.com/?utm_source=meta&utm_medium=paid_social&utm_campaign=he
 
 | Evento | Plataforma | Qué es |
 |--------|-----------|--------|
-| `whatsapp_click` | GA4 + Google Ads + Meta | Clic en botón WhatsApp → conversión principal |
+| `whatsapp_click` | GA4 + Google Ads + Meta (Lead) | Clic en botón WhatsApp +52 663 437 0584 → conversión principal |
+| `phone_click` | GA4 | Clic en teléfono consultorio +52 612 146 7076 |
+| `cotizador_start` | GA4 | Usuario interactuó con el quiz "Arma tu valoración en 3 toques" |
+| `cotizador_complete` | GA4 + Meta (Lead) | Usuario completó el quiz → micro-conversión importante |
 | `page_view` | GA4 + Meta (PageView) | Visita a cualquier página |
-| `scroll_depth_75` | GA4 | Usuario scrolleó 75% de la página (engagement) |
-| `time_on_page_60s` | GA4 | Usuario estuvo 60+ segundos (calidad de sesión) |
+| `scroll_depth_75` | GA4 | Usuario scrolleó 75% de la página |
 
-Los eventos de scroll y tiempo se pueden configurar en GTM sin código adicional usando activadores built-in.
+> **El cotizador ("Arma tu valoración en 3 toques")** es una micro-conversión clave: quien lo completa tiene alta intención. Crear audiencia de remarketing Meta con visitantes que completaron el quiz pero no hicieron clic en WhatsApp.
+
+Los eventos de scroll se pueden configurar en GTM sin código usando activadores built-in.
 
 ---
 

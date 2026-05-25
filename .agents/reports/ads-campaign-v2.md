@@ -23,8 +23,24 @@
 |----------|-----------|--------|
 | Tracking (GTM, GA4, Pixel) | 🔴 Crítico | Ver tracking-setup.md |
 | Foto del Dr. Rosas | 🔴 Alta | Pendiente sesión fotográfica |
-| Testimonios de pacientes | 🟡 Media | Solicitarlos al Dr. |
 | Páginas individuales por servicio | 🟢 Baja | Útil para Mes 2+ pero no bloquea lanzamiento |
+
+### Activos descubiertos en el sitio ✅ (usar en ads)
+| Activo | Dónde usar |
+|--------|-----------|
+| Quiz cotizador "3 toques" | Headline Google: "Cotiza tu cirugía en 30 segundos" |
+| Testimonio Jorge R. (hernia) | Copy Meta: citar textual |
+| Testimonio Lourdes M. (hernia) | Copy Meta: citar textual |
+| "Respuesta en menos de 2 horas" | Callout extension Google + copy Meta |
+| "Sin filtros ni call centers" | Diferenciador en copy |
+| Dirección: Médica del Cortés, Blvd. Pino Pallas 104 | Google Business Profile + extensión ubicación |
+
+### Datos de contacto CORRECTOS (actualizar todo lo anterior)
+| Canal | Número |
+|-------|--------|
+| **WhatsApp (conversión principal)** | **+52 663 437 0584** → wa.me/526634370584 |
+| Teléfono consultorio | +52 612 146 7076 (Lun-Vie) |
+| Consultorio | Médica del Cortés, Blvd. Pino Pallas 104, La Paz BCS |
 
 ### Nuevos diferenciadores a incorporar en el copy de ads
 Estos aparecen en el sitio pero no estaban en la v1 de nuestros anuncios:
@@ -245,8 +261,8 @@ TOTAL GOOGLE: $230 MXN/día (~$6,900 MXN/mes)
 
 **Extensión de llamada:**
 ```
-Número: (624) 100-0426
-Horario: Lunes–Sábado, 8:00 AM – 8:00 PM
+Número consultorio: +52 612 146 7076
+Horario: Lunes–Viernes, 9:00 AM – 6:00 PM
 ```
 
 **Extensión de sitelinks:**
@@ -259,7 +275,7 @@ Texto: Agendar por WhatsApp      URL: https://dralbenrosas.com/?utm_content=site
 
 **Extensión de texto destacado (callouts):**
 ```
-7-14 días a cirugía | Paquete todo incluido | 9 meses sin intereses | Postop 15 días WhatsApp | Certificado CMCG | Atención directa con el Dr.
+7-14 días a cirugía | Paquete todo incluido | 9 meses sin intereses | Respuesta en menos de 2 horas | Postop 15 días WhatsApp | Certificado CMCG | Sin call centers
 ```
 
 **Extensión de fragmento de sitio:**
@@ -450,6 +466,83 @@ Sin filtros, sin secretaria, sin esperar.
 HEADLINE: La cirugía de vesícula no es lo que imaginas
 DESCRIPCIÓN: Todo por escrito antes de operar · La Paz BCS
 CTA: Más información
+```
+
+---
+
+---
+
+### ANUNCIO — Testimonio (social proof, hernia)
+
+```
+TEXTO PRINCIPAL:
+"Buscaba un cirujano que no me apurara. Me dio segunda opinión clara,
+me operó cuando fue necesario. Cumplió todo lo que prometió."
+— Jorge R., hernia inguinal · 2026 ⭐⭐⭐⭐⭐
+
+Eso es lo que me propongo con cada paciente.
+
+Sin presionar. Sin vender la cirugía si no es necesaria.
+Te explico tu caso, te doy opciones, y decides tú.
+
+Si tienes una hernia y quieres una valoración honesta:
+
+Dr. Alben Rosas — Cirujano General, La Paz BCS
+Programación en 7-14 días · Paquete cerrado · MSI disponibles
+
+HEADLINE: "Cumplió todo lo que prometió" — Jorge R.
+DESCRIPCIÓN: Cirugía de hernia en La Paz BCS · Sin presiones · Cotización por escrito
+CTA: Más información
+```
+
+---
+
+### ANUNCIO — Testimonio (social proof, costo)
+
+```
+TEXTO PRINCIPAL:
+"Atención a un nivel que no esperaba. Cotización por escrito sin sorpresas,
+MSI funcionaron, y lo más importante: trato humano de inicio a fin."
+— Lourdes M., hernia umbilical · 2026 ⭐⭐⭐⭐⭐
+
+El miedo al costo es normal. Por eso trabajo diferente:
+
+Antes de que decidas te doy todo por escrito:
+el precio exacto, qué incluye, y las opciones de pago.
+Sin sorpresas al final.
+
+Hasta 9 meses sin intereses disponibles.
+
+Dr. Alben Rosas — Cirujano General, La Paz BCS
+
+HEADLINE: "Cotización sin sorpresas" — paciente real ⭐⭐⭐⭐⭐
+DESCRIPCIÓN: Paquete cerrado · 9 MSI · Trato directo · La Paz BCS
+CTA: Más información
+```
+
+---
+
+### ANUNCIO — Quiz/Cotizador (nuevo ángulo de entrada)
+
+```
+TEXTO PRINCIPAL:
+¿Cuánto cuesta tu cirugía?
+
+Te lo digo en 30 segundos.
+
+En el sitio tenemos un cotizador de 3 preguntas:
+1. ¿Qué te trae? (vesícula, hernia, otro)
+2. ¿Cuándo te interesa operar?
+3. ¿Cómo prefieres pagar?
+
+Sin formularios largos. Sin esperar días.
+Sin que te llame alguien que no es el médico.
+
+Entra, cotiza, y si te convence: escribes directo al Dr.
+
+HEADLINE: Cotiza tu cirugía en 30 segundos
+DESCRIPCIÓN: 3 preguntas · Paquete cerrado · La Paz BCS · Sin compromiso
+CTA: Más información  [→ apunta a dralbenrosas.com/#cotizador]
 ```
 
 ---

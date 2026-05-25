@@ -11,12 +11,19 @@
   },
 
   "contact": {
-    "phone": "(624) 100-0426",
-    "whatsapp": "(624) 100-0426",
+    "whatsapp": "+52 663 437 0584",
+    "whatsapp_link": "https://wa.me/526634370584",
+    "whatsapp_response": "Menos de 2 horas (L-S)",
+    "phone_consultorio": "+52 612 146 7076",
+    "phone_consultorio_hours": "Lunes a Viernes, cita previa",
     "email": "Alben.rosas@gmail.com",
     "instagram": "@dralbenrosas",
     "facebook": "facebook.com/share/1CyaYtTUFa/",
-    "city": "La Paz, BCS"
+    "website": "https://dralbenrosas.com",
+    "city": "La Paz, BCS",
+    "address": "Médica del Cortés — Blvd. Pino Pallas 104, Villas del Encanto, 23085, La Paz, BCS",
+    "consultorio": "Médica del Cortés",
+    "office_hours": "Lunes a Viernes (disponibilidad por WhatsApp o en consultorio)"
   },
 
   "colors": {
