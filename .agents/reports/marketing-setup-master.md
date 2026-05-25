@@ -19,7 +19,7 @@ Llena esta tabla a medida que creas las cuentas. Compártela conmigo y configuro
 | GTM Container ID | tagmanager.google.com → tu contenedor → esquina superior derecha | `GTM-_______` |
 | GA4 Measurement ID | analytics.google.com → Admin → Flujos de datos → tu sitio | `G-__________` |
 | Meta Pixel ID | business.facebook.com → Fuentes de datos → Píxeles | `3456701621158975` ✅ |
-| Meta Business ID | business.facebook.com → Configuración → Info del negocio → ID del negocio | `________________` |
+| Meta Business ID | business.facebook.com → Configuración → Info del negocio → ID del negocio | `2482834265523958` ✅ |
 | Google Ads Conversion ID | Google Ads → Herramientas → Conversiones → tu conversión → ver etiqueta | `AW-__________` |
 | Google Ads Conversion Label | Misma pantalla que arriba | `________________` |
 
@@ -525,7 +525,7 @@ Cuando termines, comparte esto conmigo:
 GTM Container ID:     GTM-PXWFLFT5     ✅
 GA4 Measurement ID:   G-3Q0C76JXB3     ✅
 Meta Pixel ID:        3456701621158975  ✅
-Meta Business ID:     (pendiente)
+Meta Business ID:     2482834265523958  ✅
 Google Ads Conversion ID:    AW-         (pendiente)
 Google Ads Conversion Label:             (pendiente)
 ```

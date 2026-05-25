@@ -156,6 +156,7 @@ Esto permite que Meta Ads optimice para mostrar tus anuncios a personas que tien
 | Campo | Valor |
 |-------|-------|
 | Meta Pixel ID | `3456701621158975` |
+| Meta Business ID | `2482834265523958` |
 | Dominio a verificar | `dralbenrosas.com` |
 | Evento de conversión principal | `Lead` (WhatsApp click) |
 | GTM Container | `GTM-PXWFLFT5` |
