@@ -89,11 +89,7 @@ Meta requiere verificar que eres dueño del dominio antes de optimizar campañas
 
 ### 3.1 — Obtener el código de verificación
 
-1. En Meta Business Manager → **Configuración del negocio** (engranaje)
-2. Menú izquierdo → **"Brand safety and suitability"** → **"Dominios"**
-3. Clic en **"Agregar"** → escribe `dralbenrosas.com` → clic en **"Agregar dominio"**
-4. Selecciona el método: **"Agregar un registro TXT a tu DNS"**
-5. Copia el código — tiene este formato: `facebook-domain-verification=XXXXXXXXXXXXXXXXXXXX`
+**Código confirmado:** `facebook-domain-verification=y9rtbme5cmct99lxmwtgrpc8p7gkm8`
 
 ### 3.2 — Agregar el TXT record en GoDaddy
 
@@ -103,8 +99,8 @@ Meta requiere verificar que eres dueño del dominio antes de optimizar campañas
 4. Selecciona tipo: **TXT**
 5. Llena los campos:
    - **Host/Nombre**: `@`
-   - **Valor/Value**: pega el código completo de Meta (incluyendo `facebook-domain-verification=...`)
-   - **TTL**: 1 hora (o el valor por default)
+   - **Valor/Value**: `facebook-domain-verification=y9rtbme5cmct99lxmwtgrpc8p7gkm8`
+   - **TTL**: 1 hora (600 segundos)
 6. Clic en **"Guardar"**
 
 ### 3.3 — Verificar en Meta
