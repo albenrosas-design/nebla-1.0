@@ -1,0 +1,191 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-05-25 10:00:00",
+  "containerVersion": {
+    "path": "accounts/0/containers/0/versions/0",
+    "accountId": "0",
+    "containerId": "0",
+    "containerVersionId": "0",
+    "container": {
+      "path": "accounts/0/containers/0",
+      "accountId": "0",
+      "containerId": "0",
+      "name": "dralbenrosas.com",
+      "publicId": "GTM-PXWFLFT5",
+      "usageContext": ["WEB"]
+    },
+    "builtInVariable": [
+      {"accountId": "0", "containerId": "0", "type": "PAGE_URL",               "name": "Page URL"},
+      {"accountId": "0", "containerId": "0", "type": "PAGE_HOSTNAME",          "name": "Page Hostname"},
+      {"accountId": "0", "containerId": "0", "type": "PAGE_PATH",              "name": "Page Path"},
+      {"accountId": "0", "containerId": "0", "type": "REFERRER",               "name": "Referrer"},
+      {"accountId": "0", "containerId": "0", "type": "CLICK_ELEMENT",          "name": "Click Element"},
+      {"accountId": "0", "containerId": "0", "type": "CLICK_CLASSES",          "name": "Click Classes"},
+      {"accountId": "0", "containerId": "0", "type": "CLICK_ID",               "name": "Click ID"},
+      {"accountId": "0", "containerId": "0", "type": "CLICK_TARGET",           "name": "Click Target"},
+      {"accountId": "0", "containerId": "0", "type": "CLICK_URL",              "name": "Click URL"},
+      {"accountId": "0", "containerId": "0", "type": "CLICK_TEXT",             "name": "Click Text"},
+      {"accountId": "0", "containerId": "0", "type": "SCROLL_DEPTH_THRESHOLD", "name": "Scroll Depth Threshold"},
+      {"accountId": "0", "containerId": "0", "type": "SCROLL_DEPTH_UNITS",     "name": "Scroll Depth Units"},
+      {"accountId": "0", "containerId": "0", "type": "SCROLL_DIRECTION",       "name": "Scroll Direction"}
+    ],
+    "tag": [
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "1",
+        "name": "Google Tag — GA4 (G-3Q0C76JXB3)",
+        "type": "googtag",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "id",                  "value": "G-3Q0C76JXB3"},
+          {"type": "LIST",     "key": "configSettingsTable",  "list": []},
+          {"type": "LIST",     "key": "eventSettingsTable",   "list": []}
+        ],
+        "firingTriggerId": ["10"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {"type": "MAP"},
+        "consentSettings": {"consentStatus": "NOT_SET"}
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "2",
+        "name": "GA4 — Event: whatsapp_click",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "whatsapp_click"},
+          {"type": "LIST", "key": "eventParameters", "list": [
+            {"type": "MAP", "map": [
+              {"type": "TEMPLATE", "key": "name",  "value": "link_url"},
+              {"type": "TEMPLATE", "key": "value", "value": "{{Click URL}}"}
+            ]},
+            {"type": "MAP", "map": [
+              {"type": "TEMPLATE", "key": "name",  "value": "event_category"},
+              {"type": "TEMPLATE", "key": "value", "value": "conversion"}
+            ]}
+          ]},
+          {"type": "LIST",    "key": "userProperties",       "list": []},
+          {"type": "BOOLEAN", "key": "sendEcommerceData",    "value": "false"},
+          {"type": "TEMPLATE","key": "measurementIdOverride","value": ""}
+        ],
+        "firingTriggerId": ["20"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {"type": "MAP"},
+        "consentSettings": {"consentStatus": "NOT_SET"}
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "3",
+        "name": "GA4 — Event: phone_click",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "phone_click"},
+          {"type": "LIST", "key": "eventParameters", "list": [
+            {"type": "MAP", "map": [
+              {"type": "TEMPLATE", "key": "name",  "value": "phone_number"},
+              {"type": "TEMPLATE", "key": "value", "value": "{{Click URL}}"}
+            ]},
+            {"type": "MAP", "map": [
+              {"type": "TEMPLATE", "key": "name",  "value": "event_category"},
+              {"type": "TEMPLATE", "key": "value", "value": "conversion"}
+            ]}
+          ]},
+          {"type": "LIST",    "key": "userProperties",       "list": []},
+          {"type": "BOOLEAN", "key": "sendEcommerceData",    "value": "false"},
+          {"type": "TEMPLATE","key": "measurementIdOverride","value": ""}
+        ],
+        "firingTriggerId": ["21"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {"type": "MAP"},
+        "consentSettings": {"consentStatus": "NOT_SET"}
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "4",
+        "name": "GA4 — Event: scroll_depth_75",
+        "type": "gaawe",
+        "parameter": [
+          {"type": "TEMPLATE", "key": "eventName", "value": "scroll_depth"},
+          {"type": "LIST", "key": "eventParameters", "list": [
+            {"type": "MAP", "map": [
+              {"type": "TEMPLATE", "key": "name",  "value": "depth_percentage"},
+              {"type": "TEMPLATE", "key": "value", "value": "75"}
+            ]},
+            {"type": "MAP", "map": [
+              {"type": "TEMPLATE", "key": "name",  "value": "depth_units"},
+              {"type": "TEMPLATE", "key": "value", "value": "percent"}
+            ]}
+          ]},
+          {"type": "LIST",    "key": "userProperties",       "list": []},
+          {"type": "BOOLEAN", "key": "sendEcommerceData",    "value": "false"},
+          {"type": "TEMPLATE","key": "measurementIdOverride","value": ""}
+        ],
+        "firingTriggerId": ["22"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {"type": "MAP"},
+        "consentSettings": {"consentStatus": "NOT_SET"}
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "triggerId": "10",
+        "name": "All Pages",
+        "type": "PAGEVIEW"
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "triggerId": "20",
+        "name": "Clic WhatsApp",
+        "type": "LINK_CLICK",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Click URL}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "wa.me"}
+            ]
+          }
+        ],
+        "waitForTags":        {"type": "BOOLEAN",  "value": "true"},
+        "checkValidation":    {"type": "BOOLEAN",  "value": "true"},
+        "waitForTagsTimeout": {"type": "TEMPLATE", "value": "2000"}
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "triggerId": "21",
+        "name": "Clic Teléfono",
+        "type": "LINK_CLICK",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {"type": "TEMPLATE", "key": "arg0", "value": "{{Click URL}}"},
+              {"type": "TEMPLATE", "key": "arg1", "value": "tel:"}
+            ]
+          }
+        ],
+        "waitForTags":        {"type": "BOOLEAN",  "value": "true"},
+        "checkValidation":    {"type": "BOOLEAN",  "value": "true"},
+        "waitForTagsTimeout": {"type": "TEMPLATE", "value": "2000"}
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "triggerId": "22",
+        "name": "Scroll Depth 75%",
+        "type": "SCROLL_DEPTH",
+        "verticalThresholdUnits": {"type": "TEMPLATE", "value": "PERCENT"},
+        "verticalThresholds":     {"type": "TEMPLATE", "value": "75"},
+        "horizontalEnabled":      {"type": "BOOLEAN",  "value": "false"},
+        "orFiringFrequency":      {"type": "BOOLEAN",  "value": "false"}
+      }
+    ],
+    "variable": []
+  }
+}
