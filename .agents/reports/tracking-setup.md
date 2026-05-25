@@ -94,7 +94,7 @@ Publicar el contenedor después de agregar esta etiqueta.
 1. En **Meta Business Manager → Fuentes de datos → Píxeles**
 2. Crear Pixel:
    - Nombre: `Nebla — dralbenrosas.com`
-3. Copia tu **Pixel ID** → formato: `XXXXXXXXXXXXXXXXXX` (número de 15-16 dígitos)
+3. **Pixel ID: `3456701621158975`** ✅ (confirmado 2026-05-25)
 
 ---
 
@@ -117,14 +117,12 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', 'TU_PIXEL_ID');
+fbq('init', '3456701621158975');
 fbq('track', 'PageView');
 </script>
 
 Activador: Todas las páginas (All Pages)
 ```
-
-> ⚠️ Reemplazar `TU_PIXEL_ID` con tu Pixel ID real.
 
 ---
 

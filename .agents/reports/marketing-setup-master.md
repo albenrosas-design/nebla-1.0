@@ -18,7 +18,7 @@ Llena esta tabla a medida que creas las cuentas. Compártela conmigo y configuro
 |----|-------------------|---------|
 | GTM Container ID | tagmanager.google.com → tu contenedor → esquina superior derecha | `GTM-_______` |
 | GA4 Measurement ID | analytics.google.com → Admin → Flujos de datos → tu sitio | `G-__________` |
-| Meta Pixel ID | business.facebook.com → Fuentes de datos → Píxeles | `________________` |
+| Meta Pixel ID | business.facebook.com → Fuentes de datos → Píxeles | `3456701621158975` ✅ |
 | Meta Business ID | business.facebook.com → Configuración → Info del negocio → ID del negocio | `________________` |
 | Google Ads Conversion ID | Google Ads → Herramientas → Conversiones → tu conversión → ver etiqueta | `AW-__________` |
 | Google Ads Conversion Label | Misma pantalla que arriba | `________________` |
@@ -522,16 +522,16 @@ https://dralbenrosas.com/?utm_source=meta&utm_medium=remarketing&utm_campaign=re
 Cuando termines, comparte esto conmigo:
 
 ```
-GTM Container ID:     GTM-
-GA4 Measurement ID:   G-
-Meta Pixel ID:        
-Meta Business ID:     
-Google Ads Conversion ID:    AW-
-Google Ads Conversion Label: 
+GTM Container ID:     GTM-PXWFLFT5     ✅
+GA4 Measurement ID:   G-3Q0C76JXB3     ✅
+Meta Pixel ID:        3456701621158975  ✅
+Meta Business ID:     (pendiente)
+Google Ads Conversion ID:    AW-         (pendiente)
+Google Ads Conversion Label:             (pendiente)
 ```
 
 Con esos 6 datos configuro todo en menos de 30 minutos.
 
 ---
 
-*Última actualización: 2026-05-25 | Próxima acción: Esperar IDs del Dr. Rosas*
+*Última actualización: 2026-05-25 | Próxima acción: Agregar Meta Pixel en GTM + verificación de dominio*
