@@ -1,0 +1,4 @@
+# Regenerable edit artifacts (debug frames, previews, intermediate clips)
+content/videos/*/edit/verify/
+content/videos/*/edit/clips_graded/
+content/videos/*/edit/preview*.mp4
