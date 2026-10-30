@@ -2,3 +2,5 @@
 content/videos/*/edit/verify/
 content/videos/*/edit/clips_graded/
 content/videos/*/edit/preview*.mp4
+content/videos/*/edit/base.mp4
+content/videos/*/edit/graphics.mov
