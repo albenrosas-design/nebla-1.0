@@ -74,6 +74,8 @@ Palabras resaltadas en oro ámbar #C4922A: *NO, GRASA, FIEBRE, AMARILLO, URGENCI
 - [ ] Encuadre: de pecho hacia arriba, con espacio arriba de la cabeza (para poder hacer zoom)
 - [ ] Lugar silencioso; micrófono de solapa si tienes
 - [ ] Bata o filipina limpia (consistencia de marca)
-- [ ] 2–3 tomas completas, o por bloques, como te sea más cómodo
+- [ ] Cámara en **1080p 30 fps** (iPhone: formato "Alta eficiencia"), nunca 4K
+- [ ] **Un clip por bloque** (6 clips, ~5–15 MB c/u → caben en el límite de 30 MB del chat). Repetir bloque = clip nuevo
+- [ ] Mismo encuadre y luz en todos los clips para que los cortes no se noten
 - [ ] Opcional B-roll (5–10 s c/u): tú en consultorio, lavado de manos, torre de laparoscopía, pasillo de quirófano
 - [ ] Subir los archivos a `content/videos/01-vesicula-limon/raw/`
