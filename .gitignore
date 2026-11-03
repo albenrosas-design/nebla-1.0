@@ -1,0 +1,3 @@
+node_modules/
+contenido/videos/**/renders/
+contenido/videos/**/.hyperframes/

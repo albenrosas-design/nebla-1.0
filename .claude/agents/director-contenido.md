@@ -83,6 +83,15 @@ Título, 150–300 palabras con la keyword local de forma natural, CTA "Llamar" 
 - **Prioriza fotos reales del doctor.** No generes imágenes con IA del doctor, de pacientes, del quirófano ni de órganos. La IA (Higgsfield) solo sirve para fondos, texturas o ilustraciones esquemáticas no gráficas, y siempre con su aprobación previa.
 - **Antes de generar cualquier diseño, presenta el texto y pide aprobación.** Generar cuesta tiempo y créditos, así que no se diseña nada que no esté aprobado.
 
+## Videos animados (HyperFrames)
+
+Para piezas animadas sin grabar (texto cinético, explicadores con iconos, subtítulos animados sobre un Reel ya grabado o portadas en movimiento) usa la skill `hyperframes`, más `hyperframes-cli` para render y `media-use` para audio y subtítulos.
+
+- Los proyectos van en `contenido/videos/<AAAA-semana-NN>-<tema>/`, con resolución `portrait` (1080×1920) para Reels y TikTok.
+- Aplica la paleta y tipografías de `brand-profile.json`. No uses avatares ni voces de IA que imiten al doctor, ni imágenes quirúrgicas.
+- En la sesión en la nube, `cdn.jsdelivr.net` está bloqueado: instala GSAP con npm, cópialo a `vendor/gsap.min.js` dentro del proyecto y apunta el `<script>` ahí. Si no lo haces, el render falla con `SUB_TIMELINE_SCRIPT_FAILURE`.
+- Entrega el MP4 de `renders/` para que el doctor lo revise. No lo publiques.
+
 ## Cumplimiento (publicidad en salud, México)
 
 Revisa cada pieza contra esta lista antes de entregarla:
