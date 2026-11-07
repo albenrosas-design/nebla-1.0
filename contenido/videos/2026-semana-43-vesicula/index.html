@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Reel vesícula · semana 43</title>
+    <script src="vendor/gsap.min.js"></script>
+    <style>
+      html, body { margin: 0; background: #000; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="128.5" data-width="1080" data-height="1920">
+      <video id="reel" class="clip" src="assets/reel.mp4" data-start="0" data-duration="124.0" data-track-index="0"
+        playsinline data-has-audio="true"
+        style="position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: contain; z-index: 1"></video>
+      <div id="hook" data-composition-id="hook" data-composition-src="compositions/hook.html" data-start="0.0" data-duration="5.6" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 2"></div>
+      <div id="nombre" data-composition-id="nombre" data-composition-src="compositions/nombre.html" data-start="6.0" data-duration="7.0" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 3"></div>
+      <div id="mito" data-composition-id="mito" data-composition-src="compositions/mito.html" data-start="19.5" data-duration="8.0" data-track-index="3" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 4"></div>
+      <div id="senales" data-composition-id="senales" data-composition-src="compositions/senales.html" data-start="28.5" data-duration="13.3" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 5"></div>
+      <div id="ultra" data-composition-id="ultra" data-composition-src="compositions/ultra.html" data-start="43.0" data-duration="13.5" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 6"></div>
+      <div id="piedras" data-composition-id="piedras" data-composition-src="compositions/piedras.html" data-start="57.0" data-duration="3.4" data-track-index="3" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 7"></div>
+      <div id="sindolor" data-composition-id="sindolor" data-composition-src="compositions/sindolor.html" data-start="61.0" data-duration="18.4" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 8"></div>
+      <div id="alarma" data-composition-id="alarma" data-composition-src="compositions/alarma.html" data-start="81.6" data-duration="22.4" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 9"></div>
+      <div id="dudas" data-composition-id="dudas" data-composition-src="compositions/dudas.html" data-start="105.5" data-duration="12.5" data-track-index="3" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 10"></div>
+      <div id="cierre" data-composition-id="cierre" data-composition-src="compositions/cierre.html" data-start="124.0" data-duration="4.5" data-track-index="4" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 11"></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<template>
+  <style>
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 600; src: url('assets/fonts/cormorant-garamond-latin-600-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-italic.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 300; src: url('assets/fonts/jost-latin-300-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 400; src: url('assets/fonts/jost-latin-400-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 500; src: url('assets/fonts/jost-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 600; src: url('assets/fonts/jost-latin-600-normal.woff2'); }
+
+    #root { position: absolute; inset: 0; }
+    .tag { position: absolute; left: 44px; top: 190px; padding: 18px 26px 20px; border-radius: 22px;
+            background: rgba(61, 43, 31, 0.86); border-left: 6px solid #C4922A; }
+    .tag-name { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 46px; color: #FAFAF8; line-height: 1; }
+    .tag-role { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 30px; color: #C4922A;
+                 letter-spacing: 0.06em; margin-top: 8px; }
+  </style>
+  <div id="root" data-composition-id="nombre" data-width="1080" data-height="1920">
+    <div id="nombre-box" class="clip tag" data-start="0" data-duration="7.0">
+      <div id="nombre-name" class="tag-name">Dr. Alben Rosas</div>
+      <div id="nombre-role" class="tag-role">Cirujano General · La Paz, BCS</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#nombre-box", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0);
+    tl.fromTo("#nombre-name", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, 0.1);
+    tl.fromTo("#nombre-role", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, 0.3);
+    tl.to("#nombre-box", { opacity: 0, duration: 0.35, ease: "power2.in" }, 6.6);
+    window.__timelines["nombre"] = tl;
+  </script>
+</template>

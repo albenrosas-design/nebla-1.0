@@ -1,0 +1,50 @@
+<template>
+  <style>
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 600; src: url('assets/fonts/cormorant-garamond-latin-600-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-italic.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 300; src: url('assets/fonts/jost-latin-300-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 400; src: url('assets/fonts/jost-latin-400-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 500; src: url('assets/fonts/jost-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 600; src: url('assets/fonts/jost-latin-600-normal.woff2'); }
+
+    #root { position: absolute; inset: 0; }
+    .card {
+      position: absolute; left: 60px; right: 60px; top: 790px;
+      padding: 34px 40px 38px; border-radius: 30px;
+      background: rgba(250, 250, 248, 0.95);
+      border-left: 10px solid #C4922A;
+      box-shadow: 0 18px 50px rgba(20, 30, 40, 0.28);
+      color: #3D2B1F; font-family: 'Jost', sans-serif;
+    }
+    .kicker { font-family: 'Jost', sans-serif; font-weight: 600; font-size: 30px; letter-spacing: 0.14em;
+              text-transform: uppercase; color: #A87A1E; margin: 0 0 10px; }
+    .title  { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 74px; line-height: 1.02;
+              color: #2A6B7C; margin: 0; }
+    .item   { display: flex; align-items: baseline; gap: 18px; font-size: 42px; font-weight: 400;
+              line-height: 1.2; margin-top: 18px; }
+    .dot    { flex: none; width: 16px; height: 16px; border-radius: 50%; background: #C4922A;
+              transform: translateY(-6px); }
+    .em     { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 56px;
+              color: #8B3A2A; margin-top: 20px; line-height: 1.05; }
+    .alarm  { background: rgba(139, 58, 42, 0.96); border-left-color: #F5EDE3; color: #FAFAF8; }
+    .alarm .kicker { color: #F5EDE3; }
+    .alarm .title  { color: #FAFAF8; }
+    .alarm .dot    { background: #F5EDE3; }
+    .alarm .em     { color: #F5EDE3; font-family: 'Jost', sans-serif; font-style: normal; font-weight: 600; font-size: 46px; }
+
+  </style>
+  <div id="root" data-composition-id="sindolor" data-width="1080" data-height="1920">
+    <div id="sindolor-card" class="clip card " data-start="0" data-duration="18.4">
+      <p id="sindolor-k" class="kicker">¿Piedras sin dolor?</p>
+      <div id="sindolor-i1" class="item"><span class="dot"></span><span>Te las encontraron, pero nunca te han dolido</span></div><div id="sindolor-i2" class="item"><span class="dot"></span><span>Tranquilo: no siempre se opera</span></div><div id="sindolor-i3" class="item"><span class="dot"></span><span>Vigilancia con un cirujano de confianza</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#sindolor-card", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0);
+    tl.fromTo("#sindolor-i1", { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 2.2); tl.fromTo("#sindolor-i2", { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 9.6); tl.fromTo("#sindolor-i3", { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 13.6);
+    tl.to("#sindolor-card", { opacity: 0, duration: 0.35, ease: "power2.in" }, 18.0);
+    window.__timelines["sindolor"] = tl;
+  </script>
+</template>

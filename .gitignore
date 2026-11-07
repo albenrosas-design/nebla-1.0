@@ -1,3 +1,5 @@
 node_modules/
 contenido/videos/**/renders/
 contenido/videos/**/.hyperframes/
+contenido/videos/**/*.mp4
+contenido/videos/**/vendor/
