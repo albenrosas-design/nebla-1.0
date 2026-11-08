@@ -1,0 +1,41 @@
+<template>
+  <style>
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 600; src: url('assets/fonts/cormorant-garamond-latin-600-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-italic.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 300; src: url('assets/fonts/jost-latin-300-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 400; src: url('assets/fonts/jost-latin-400-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 500; src: url('assets/fonts/jost-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 600; src: url('assets/fonts/jost-latin-600-normal.woff2'); }
+
+    #root { position: absolute; inset: 0; }
+    .ec { position: absolute; inset: 0; background: #F5EDE3; display: flex; flex-direction: column;
+           align-items: center; justify-content: center; text-align: center; padding: 0 80px; }
+    .ec-small  { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 52px; color: #3D2B1F; }
+    .ec-name   { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 104px; color: #8B3A2A; line-height: 1; margin-top: 6px; }
+    .ec-role   { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 32px; color: #3D2B1F; letter-spacing: 0.04em; margin-top: 22px; }
+    .ec-rule   { width: 160px; height: 3px; background: #C4922A; margin: 54px 0 48px; }
+    .ec-cta    { font-family: 'Jost', sans-serif; font-weight: 600; font-size: 46px; color: #FAFAF8; background: #2A6B7C;
+                  padding: 22px 46px; border-radius: 999px; }
+    .ec-info   { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 36px; color: #3D2B1F; margin-top: 26px; }
+    .ec-handle { font-family: 'Jost', sans-serif; font-weight: 500; font-size: 34px; color: #A87A1E; margin-top: 40px; letter-spacing: 0.04em; }
+  </style>
+  <div id="root" data-composition-id="cierre" data-width="1080" data-height="1920">
+    <div id="cierre-bg" class="clip ec" data-start="0" data-duration="4.5">
+      <div id="ec-l1" class="ec-small">Soy el</div>
+      <div id="ec-l2" class="ec-name">Dr. Alben Rosas</div>
+      <div id="ec-l3" class="ec-role">Cirujano General · Céd. Prof. 11017193</div>
+      <div id="ec-l4" class="ec-rule"></div>
+      <div id="ec-l5" class="ec-cta">Agenda tu valoración</div>
+      <div id="ec-l6" class="ec-info">WhatsApp 663 437 0584</div>
+      <div id="ec-l7" class="ec-info">Médica del Cortés · La Paz, BCS</div>
+      <div id="ec-l8" class="ec-handle">@dralbenrosas</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cierre-bg", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 0);
+    tl.fromTo("#ec-l1", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.15); tl.fromTo("#ec-l2", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.27); tl.fromTo("#ec-l3", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.39); tl.fromTo("#ec-l4", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.51); tl.fromTo("#ec-l5", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.63); tl.fromTo("#ec-l6", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.75); tl.fromTo("#ec-l7", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.87); tl.fromTo("#ec-l8", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.99);
+    window.__timelines["cierre"] = tl;
+  </script>
+</template>

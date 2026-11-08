@@ -1,0 +1,50 @@
+<template>
+  <style>
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 600; src: url('assets/fonts/cormorant-garamond-latin-600-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-italic.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 300; src: url('assets/fonts/jost-latin-300-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 400; src: url('assets/fonts/jost-latin-400-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 500; src: url('assets/fonts/jost-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 600; src: url('assets/fonts/jost-latin-600-normal.woff2'); }
+
+    #root { position: absolute; inset: 0; }
+    .br { position: absolute; left: 0; top: 0; width: 1080px; height: 1300px; overflow: hidden;
+          background: radial-gradient(ellipse at 50% 38%, #5A3E2C 0%, #34241A 62%, #261A12 100%);
+          -webkit-mask-image: linear-gradient(to bottom, #000 86%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 86%, transparent 100%); }
+    .br svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1300px; }
+    .lbl { font-family: 'Jost', sans-serif; font-weight: 500; font-size: 34px; fill: #F5EDE3; letter-spacing: 0.02em; }
+    .lbl-k { font-family: 'Jost', sans-serif; font-weight: 600; font-size: 30px; fill: #F0C877; letter-spacing: 0.14em; }
+    .mono { font-family: 'IBM Plex Mono', monospace; font-size: 28px; fill: #CFC6B8; }
+
+  </style>
+  <div id="root" data-composition-id="branat" data-width="1080" data-height="1920">
+    <div id="branat-panel" class="clip br" data-start="0" data-duration="6.2" data-layout-allow-overflow>
+      <svg viewBox="0 0 1080 1300"><g id="branat-art"><g transform="translate(108 40) scale(0.8)">
+      <path d="M455 190 Q460 285 330 312 Q236 336 228 440 L262 930 Q276 1040 350 1120 L730 1120 Q804 1040 818 930 L852 440 Q844 336 750 312 Q620 285 625 190"
+            fill="rgba(245,237,227,0.05)" stroke="#E8DCCB" stroke-width="5" stroke-linecap="round"/>
+      <path d="M330 520 Q540 430 750 520 M318 600 Q540 500 762 600 M310 680 Q540 575 770 680" fill="none" stroke="rgba(232,220,203,0.35)" stroke-width="4"/>
+      <path d="M335 720 Q430 650 540 590 Q650 650 745 720" fill="none" stroke="#E8DCCB" stroke-width="5" stroke-linecap="round"/>
+      <path id="branat-liver" d="M300 650 Q330 600 470 610 Q610 618 660 660 Q570 735 430 760 Q330 772 300 712 Z"
+            fill="#6A4A24" stroke="#C4922A" stroke-width="5"/>
+      <path id="branat-gb" d="M408 742 Q380 800 416 828 Q456 845 460 800 Q458 760 434 742 Z" fill="#8B3A2A" stroke="#F0C877" stroke-width="4"/>
+      <circle id="branat-r1" cx="422" cy="790" r="40" fill="none" stroke="#F0C877" stroke-width="5"/>
+      <circle id="branat-r2" cx="422" cy="790" r="40" fill="none" stroke="#F0C877" stroke-width="5"/>
+      <path id="branat-arrow" opacity="0" d="M395 770 C 290 660 250 500 312 352" fill="none" stroke="#F0C877" stroke-width="6" stroke-dasharray="18 14" stroke-linecap="round"/>
+      <path id="branat-head" d="M292 372 L312 336 L338 368" fill="none" stroke="#F0C877" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="branat-l1" class="lbl" x="490" y="905" style="font-size:40px">Vesícula</text>
+      <line id="branat-ln" x1="440" y1="830" x2="485" y2="880" stroke="#F5EDE3" stroke-width="3"/>
+      <text id="branat-l2" class="lbl" x="350" y="270" style="font-size:40px">Hombro derecho</text>
+    </g></g></svg>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#branat-panel", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power2.out" }, 0);
+    tl.fromTo("#branat-art", { scale: 1.0, transformOrigin: "540px 650px" }, { scale: 1.06, duration: 6.2, ease: "none" }, 0);
+    tl.fromTo("#branat-liver", { opacity: 0 }, { ...{ opacity: 1 }, duration: 0.5, ease: "power3.out" }, 0.2); tl.fromTo("#branat-gb", { opacity: 0, scale: 0.5, transformOrigin: '430px 790px' }, { ...{ opacity: 1, scale: 1 }, duration: 0.5, ease: "back.out(2)" }, 0.6); tl.fromTo("#branat-l1", { opacity: 0 }, { ...{ opacity: 1 }, duration: 0.4, ease: "power3.out" }, 1.0); tl.fromTo("#branat-ln", { opacity: 0 }, { ...{ opacity: 1 }, duration: 0.4, ease: "power3.out" }, 1.0); tl.fromTo("#branat-r1", { scale: 1, opacity: 0.9, transformOrigin: '422px 790px' }, { ...{ scale: 2.6, opacity: 0 }, duration: 1.1, ease: "power2.out" }, 1.0); tl.fromTo("#branat-r2", { scale: 1, opacity: 0.9, transformOrigin: '422px 790px' }, { ...{ scale: 2.6, opacity: 0 }, duration: 1.1, ease: "power2.out" }, 1.9); tl.fromTo("#branat-r1", { scale: 1, opacity: 0.9, transformOrigin: '422px 790px' }, { ...{ scale: 2.6, opacity: 0 }, duration: 1.1, ease: "power2.out", immediateRender: false }, 2.8); tl.fromTo("#branat-r2", { scale: 1, opacity: 0.9, transformOrigin: '422px 790px' }, { ...{ scale: 2.6, opacity: 0 }, duration: 1.1, ease: "power2.out", immediateRender: false }, 3.7); tl.fromTo("#branat-arrow", { strokeDashoffset: 420, opacity: 1 }, { ...{ strokeDashoffset: 0, opacity: 1 }, duration: 1.2, ease: "power2.inOut", immediateRender: false }, 3.3); tl.fromTo("#branat-head", { opacity: 0 }, { ...{ opacity: 1 }, duration: 0.3, ease: "power3.out" }, 4.4); tl.fromTo("#branat-l2", { opacity: 0, y: 12 }, { ...{ opacity: 1, y: 0 }, duration: 0.4, ease: "power3.out" }, 4.4);
+    tl.to("#branat-panel", { opacity: 0, duration: 0.25, ease: "power2.in" }, 5.9);
+    window.__timelines["branat"] = tl;
+  </script>
+</template>

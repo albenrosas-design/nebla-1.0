@@ -1,0 +1,52 @@
+<template>
+  <style>
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 600; src: url('assets/fonts/cormorant-garamond-latin-600-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-italic.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 300; src: url('assets/fonts/jost-latin-300-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 400; src: url('assets/fonts/jost-latin-400-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 500; src: url('assets/fonts/jost-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 600; src: url('assets/fonts/jost-latin-600-normal.woff2'); }
+
+    #root { position: absolute; inset: 0; }
+    .br { position: absolute; left: 0; top: 0; width: 1080px; height: 1300px; overflow: hidden;
+          background: radial-gradient(ellipse at 50% 38%, #5A3E2C 0%, #34241A 62%, #261A12 100%);
+          -webkit-mask-image: linear-gradient(to bottom, #000 86%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 86%, transparent 100%); }
+    .br svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1300px; }
+    .lbl { font-family: 'Jost', sans-serif; font-weight: 500; font-size: 34px; fill: #F5EDE3; letter-spacing: 0.02em; }
+    .lbl-k { font-family: 'Jost', sans-serif; font-weight: 600; font-size: 30px; fill: #F0C877; letter-spacing: 0.14em; }
+    .mono { font-family: 'IBM Plex Mono', monospace; font-size: 28px; fill: #CFC6B8; }
+
+  </style>
+  <div id="root" data-composition-id="bralm" data-width="1080" data-height="1920">
+    <div id="bralm-panel" class="clip br" data-start="0" data-duration="10.6" data-layout-allow-overflow>
+      <svg viewBox="0 0 1080 1300"><g id="bralm-art">
+      <text class="lbl-k" x="540" y="260" text-anchor="middle">DATOS DE ALARMA</text>
+      <g id="bralm-row1">
+        <path d="M150 470 Q245 385 340 470 Q245 555 150 470 Z" fill="#E7C24A" stroke="#F5EDE3" stroke-width="5"/>
+        <circle cx="245" cy="470" r="34" fill="#4A3426"/><circle cx="245" cy="470" r="14" fill="#140D09"/>
+        <text class="lbl" x="400" y="482" style="font-size:52px">Piel u ojos amarillos</text>
+      </g>
+      <g id="bralm-row2">
+        <path d="M245 610 Q300 690 300 735 A55 55 0 0 1 190 735 Q190 690 245 610 Z" fill="#9A5A12" stroke="#F5EDE3" stroke-width="5"/>
+        <text class="lbl" x="400" y="742" style="font-size:52px">Orina muy oscura</text>
+      </g>
+      <g id="bralm-row3">
+        <rect x="228" y="860" width="34" height="120" rx="17" fill="none" stroke="#F5EDE3" stroke-width="5"/>
+        <circle cx="245" cy="1000" r="34" fill="#C2452D" stroke="#F5EDE3" stroke-width="5"/>
+        <rect id="bralm-merc" x="238" y="900" width="14" height="80" rx="7" fill="#C2452D"/>
+        <text class="lbl" x="400" y="1000" style="font-size:52px">Dolor con fiebre</text>
+      </g>
+    </g></svg>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#bralm-panel", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power2.out" }, 0);
+    tl.fromTo("#bralm-art", { scale: 1.0, transformOrigin: "540px 650px" }, { scale: 1.06, duration: 10.6, ease: "none" }, 0);
+    tl.fromTo("#bralm-row1", { opacity: 0, x: -40 }, { ...{ opacity: 1, x: 0 }, duration: 0.5, ease: "power3.out" }, 0.4); tl.fromTo("#bralm-row2", { opacity: 0, x: -40 }, { ...{ opacity: 1, x: 0 }, duration: 0.5, ease: "power3.out" }, 4.0); tl.fromTo("#bralm-row3", { opacity: 0, x: -40 }, { ...{ opacity: 1, x: 0 }, duration: 0.5, ease: "power3.out" }, 8.0); tl.fromTo("#bralm-merc", { scaleY: 0.2, transformOrigin: '245px 980px' }, { ...{ scaleY: 1 }, duration: 1.2, ease: "power2.out" }, 8.3);
+    tl.to("#bralm-panel", { opacity: 0, duration: 0.25, ease: "power2.in" }, 10.3);
+    window.__timelines["bralm"] = tl;
+  </script>
+</template>

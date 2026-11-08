@@ -1,0 +1,69 @@
+<template>
+  <style>
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 600; src: url('assets/fonts/cormorant-garamond-latin-600-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-italic.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 300; src: url('assets/fonts/jost-latin-300-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 400; src: url('assets/fonts/jost-latin-400-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 500; src: url('assets/fonts/jost-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 600; src: url('assets/fonts/jost-latin-600-normal.woff2'); }
+
+    #root { position: absolute; inset: 0; }
+    .br { position: absolute; left: 0; top: 0; width: 1080px; height: 1300px; overflow: hidden;
+          background: radial-gradient(ellipse at 50% 38%, #5A3E2C 0%, #34241A 62%, #261A12 100%);
+          -webkit-mask-image: linear-gradient(to bottom, #000 86%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 86%, transparent 100%); }
+    .br svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1300px; }
+    .lbl { font-family: 'Jost', sans-serif; font-weight: 500; font-size: 34px; fill: #F5EDE3; letter-spacing: 0.02em; }
+    .lbl-k { font-family: 'Jost', sans-serif; font-weight: 600; font-size: 30px; fill: #F0C877; letter-spacing: 0.14em; }
+    .mono { font-family: 'IBM Plex Mono', monospace; font-size: 28px; fill: #CFC6B8; }
+
+  </style>
+  <div id="root" data-composition-id="brus" data-width="1080" data-height="1920">
+    <div id="brus-panel" class="clip br" data-start="0" data-duration="5.6" data-layout-allow-overflow>
+      <svg viewBox="0 0 1080 1300">
+      <defs>
+        <filter id="brus-speckle" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="7" result="n"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0.85  0 0 0 0 0.82  0 0 0 0 0.78  0 0 0 0.75 -0.18"/>
+        </filter>
+        <clipPath id="brus-sector"><path d="M540 240 L60 1000 A 900 900 0 0 0 1020 1000 Z"/></clipPath>
+        <linearGradient id="brus-shadow" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0B0806" stop-opacity="0.95"/><stop offset="1" stop-color="#0B0806" stop-opacity="0.55"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="1080" height="1300" fill="#0E0B09"/>
+      <g id="brus-art">
+        <g clip-path="url(#brus-sector)">
+          <rect x="0" y="200" width="1080" height="1100" fill="#2B2722"/>
+          <rect x="0" y="200" width="1080" height="1100" filter="url(#brus-speckle)"/>
+          <ellipse cx="540" cy="700" rx="215" ry="120" fill="#0A0807" stroke="#E9E2D6" stroke-width="7" transform="rotate(-12 540 700)"/>
+          <rect x="488" y="790" width="150" height="400" fill="url(#brus-shadow)"/>
+          <g id="brus-stones">
+            <ellipse cx="520" cy="785" rx="26" ry="18" fill="#FFFFFF"/>
+            <ellipse cx="566" cy="792" rx="22" ry="16" fill="#F3EEE6"/>
+            <ellipse cx="608" cy="780" rx="18" ry="13" fill="#FFFFFF"/>
+          </g>
+        </g>
+        <path d="M540 240 L60 1000 A 900 900 0 0 0 1020 1000 Z" fill="none" stroke="rgba(233,226,214,0.25)" stroke-width="2"/>
+        <g id="brus-cal">
+          <line x1="480" y1="740" x2="650" y2="740" stroke="#F0C877" stroke-width="4" stroke-dasharray="10 8"/>
+          <path d="M480 728 L480 752 M650 728 L650 752" stroke="#F0C877" stroke-width="4"/>
+          <text class="lbl" x="670" y="752" style="fill:#F0C877">Litos</text>
+        </g>
+        <text id="brus-vb" class="lbl" x="330" y="610">Vesícula</text>
+      </g>
+      <text class="mono" data-layout-ignore x="60" y="210">ABD SUP · 3.5 MHz · VB long</text>
+      <text class="mono" data-layout-ignore x="1020" y="210" text-anchor="end">La Paz, BCS</text>
+    </svg>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#brus-panel", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power2.out" }, 0);
+    tl.fromTo("#brus-art", { scale: 1.0, transformOrigin: "540px 650px" }, { scale: 1.06, duration: 5.6, ease: "none" }, 0);
+    tl.fromTo("#brus-vb", { opacity: 0 }, { ...{ opacity: 1 }, duration: 0.4, ease: "power3.out" }, 0.6); tl.fromTo("#brus-stones", { opacity: 0.3 }, { ...{ opacity: 1 }, duration: 0.5, ease: "power3.out" }, 1.2); tl.fromTo("#brus-cal", { opacity: 0, x: -20 }, { ...{ opacity: 1, x: 0 }, duration: 0.5, ease: "power3.out" }, 2.0);
+    tl.to("#brus-panel", { opacity: 0, duration: 0.25, ease: "power2.in" }, 5.3);
+    window.__timelines["brus"] = tl;
+  </script>
+</template>

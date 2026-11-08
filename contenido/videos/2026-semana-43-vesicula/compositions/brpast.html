@@ -1,0 +1,44 @@
+<template>
+  <style>
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 600; src: url('assets/fonts/cormorant-garamond-latin-600-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-italic.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 300; src: url('assets/fonts/jost-latin-300-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 400; src: url('assets/fonts/jost-latin-400-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 500; src: url('assets/fonts/jost-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 600; src: url('assets/fonts/jost-latin-600-normal.woff2'); }
+
+    #root { position: absolute; inset: 0; }
+    .br { position: absolute; left: 0; top: 0; width: 1080px; height: 1300px; overflow: hidden;
+          background: radial-gradient(ellipse at 50% 38%, #5A3E2C 0%, #34241A 62%, #261A12 100%);
+          -webkit-mask-image: linear-gradient(to bottom, #000 86%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 86%, transparent 100%); }
+    .br svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1300px; }
+    .lbl { font-family: 'Jost', sans-serif; font-weight: 500; font-size: 34px; fill: #F5EDE3; letter-spacing: 0.02em; }
+    .lbl-k { font-family: 'Jost', sans-serif; font-weight: 600; font-size: 30px; fill: #F0C877; letter-spacing: 0.14em; }
+    .mono { font-family: 'IBM Plex Mono', monospace; font-size: 28px; fill: #CFC6B8; }
+
+  </style>
+  <div id="root" data-composition-id="brpast" data-width="1080" data-height="1920">
+    <div id="brpast-panel" class="clip br" data-start="0" data-duration="4.6" data-layout-allow-overflow>
+      <svg viewBox="0 0 1080 1300"><g id="brpast-art">
+      <text class="lbl-k" x="540" y="250" text-anchor="middle">¿INDIGESTIÓN?</text>
+      <path d="M400 560 L680 560 L650 960 Q646 990 616 990 L464 990 Q434 990 430 960 Z" fill="rgba(245,237,227,0.06)" stroke="#C4922A" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M418 690 L662 690 L646 960 Q643 978 620 978 L460 978 Q437 978 434 960 Z" fill="rgba(42,107,124,0.35)"/>
+      <circle id="brpast-b0" cx="470" cy="780" r="10" fill="none" stroke="#F5EDE3" stroke-width="3" opacity="0.8"/><circle id="brpast-b1" cx="520" cy="820" r="7" fill="none" stroke="#F5EDE3" stroke-width="3" opacity="0.8"/><circle id="brpast-b2" cx="560" cy="760" r="12" fill="none" stroke="#F5EDE3" stroke-width="3" opacity="0.8"/><circle id="brpast-b3" cx="600" cy="830" r="8" fill="none" stroke="#F5EDE3" stroke-width="3" opacity="0.8"/><circle id="brpast-b4" cx="505" cy="870" r="6" fill="none" stroke="#F5EDE3" stroke-width="3" opacity="0.8"/><circle id="brpast-b5" cx="575" cy="880" r="9" fill="none" stroke="#F5EDE3" stroke-width="3" opacity="0.8"/>
+      <g id="brpast-cap1"><rect x="160" y="700" width="180" height="70" rx="35" fill="#F5EDE3"/><path d="M250 700 L305 700 Q340 700 340 735 Q340 770 305 770 L250 770 Z" fill="#8B3A2A"/></g>
+      <g id="brpast-cap2"><rect x="760" y="800" width="170" height="66" rx="33" fill="#F5EDE3"/><path d="M845 800 L897 800 Q930 800 930 833 Q930 866 897 866 L845 866 Z" fill="#C4922A"/></g>
+      <g id="brpast-tab"><circle cx="820" cy="640" r="58" fill="#F5EDE3"/><line x1="772" y1="640" x2="868" y2="640" stroke="#C9BBA8" stroke-width="5"/></g>
+      <text id="brpast-l" class="lbl" x="540" y="1120" text-anchor="middle">Sal de uvas · antiácidos · analgésicos</text>
+    </g></svg>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#brpast-panel", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power2.out" }, 0);
+    tl.fromTo("#brpast-art", { scale: 1.0, transformOrigin: "540px 650px" }, { scale: 1.06, duration: 4.6, ease: "none" }, 0);
+    tl.fromTo("#brpast-cap1", { opacity: 0, x: -60, rotation: -20 }, { ...{ opacity: 1, x: 0, rotation: -8 }, duration: 0.6, ease: "power3.out" }, 0.2); tl.fromTo("#brpast-cap2", { opacity: 0, x: 60, rotation: 20 }, { ...{ opacity: 1, x: 0, rotation: 10 }, duration: 0.6, ease: "power3.out" }, 0.4); tl.fromTo("#brpast-tab", { opacity: 0, scale: 0.6, transformOrigin: '820px 640px' }, { ...{ opacity: 1, scale: 1 }, duration: 0.5, ease: "power3.out" }, 0.55); tl.fromTo("#brpast-l", { opacity: 0, y: 20 }, { ...{ opacity: 1, y: 0 }, duration: 0.5, ease: "power3.out" }, 1.0); tl.fromTo("#brpast-b0", { y: 0, opacity: 0.85 }, { ...{ y: -200, opacity: 0 }, duration: 2.4, ease: "none" }, 0.2); tl.fromTo("#brpast-b1", { y: 0, opacity: 0.85 }, { ...{ y: -200, opacity: 0 }, duration: 2.4, ease: "none" }, 0.55); tl.fromTo("#brpast-b2", { y: 0, opacity: 0.85 }, { ...{ y: -200, opacity: 0 }, duration: 2.4, ease: "none" }, 0.9); tl.fromTo("#brpast-b3", { y: 0, opacity: 0.85 }, { ...{ y: -200, opacity: 0 }, duration: 2.4, ease: "none" }, 1.25); tl.fromTo("#brpast-b4", { y: 0, opacity: 0.85 }, { ...{ y: -200, opacity: 0 }, duration: 2.4, ease: "none" }, 1.6); tl.fromTo("#brpast-b5", { y: 0, opacity: 0.85 }, { ...{ y: -200, opacity: 0 }, duration: 2.4, ease: "none" }, 1.95);
+    tl.to("#brpast-panel", { opacity: 0, duration: 0.25, ease: "power2.in" }, 4.3);
+    window.__timelines["brpast"] = tl;
+  </script>
+</template>

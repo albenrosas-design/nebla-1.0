@@ -1,0 +1,41 @@
+<template>
+  <style>
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-weight: 600; src: url('assets/fonts/cormorant-garamond-latin-600-normal.woff2'); }
+    @font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 500; src: url('assets/fonts/cormorant-garamond-latin-500-italic.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 300; src: url('assets/fonts/jost-latin-300-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 400; src: url('assets/fonts/jost-latin-400-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 500; src: url('assets/fonts/jost-latin-500-normal.woff2'); }
+    @font-face { font-family: 'Jost'; font-weight: 600; src: url('assets/fonts/jost-latin-600-normal.woff2'); }
+
+    #root { position: absolute; inset: 0; }
+    .scrim { position: absolute; left: 0; top: 760px; width: 1080px; height: 600px;
+              background: linear-gradient(to bottom, rgba(28,18,12,0) 0%, rgba(28,18,12,0.5) 50%, rgba(28,18,12,0.42) 82%, rgba(28,18,12,0) 100%); }
+    .txt { position: absolute; left: 64px; right: 64px; bottom: 655px; display: flex; flex-direction: column;
+            color: #FAFAF8; font-family: 'Jost', sans-serif; text-shadow: 0 2px 4px rgba(20,12,6,0.55), 0 4px 22px rgba(20,12,6,0.55); }
+    .kicker { font-weight: 600; font-size: 32px; letter-spacing: 0.14em; text-transform: uppercase; color: #F0C877; margin: 0 0 6px; }
+    .title  { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 86px; line-height: 1.0; margin: 0; }
+    .item   { display: flex; align-items: baseline; gap: 18px; font-size: 46px; font-weight: 500; line-height: 1.18; margin-top: 14px; }
+    .dot    { flex: none; width: 16px; height: 16px; border-radius: 50%; background: #F0C877; transform: translateY(-7px);
+               box-shadow: 0 2px 8px rgba(20,12,6,0.6); }
+    .em     { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 64px;
+               color: #F7DDA8; margin-top: 12px; line-height: 1.04; }
+
+  </style>
+  <div id="root" data-composition-id="ultra" data-width="1080" data-height="1920">
+    <div id="ultra-wrap" class="clip" data-start="0" data-duration="13.5" data-layout-allow-caption-zone>
+      <div id="ultra-scrim" class="scrim"></div>
+      <div id="ultra-txt" class="txt">
+        <p id="ultra-k" class="kicker">¿Cómo saberlo?</p><h2 id="ultra-t" class="title">Un ultrasonido</h2>
+        <div id="ultra-i1" class="item"><span class="dot"></span><span>de hígado y vías biliares</span></div><div id="ultra-i2" class="item"><span class="dot"></span><span>y llévaselo a tu cirujano</span></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ultra-wrap", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0);
+    tl.fromTo("#ultra-i1", { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 3.8); tl.fromTo("#ultra-i2", { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 7.4);
+    tl.to("#ultra-wrap", { opacity: 0, duration: 0.35, ease: "power2.in" }, 13.1);
+    window.__timelines["ultra"] = tl;
+  </script>
+</template>
